@@ -1,9 +1,9 @@
 import { Controller, Get ,Request } from '@nestjs/common';
 import { of } from 'rxjs';
 
-@Controller('/users')
+@Controller('/users')   //  Controller at user route path.
 export class UsersController {
-@Get('/profile')
+@Get('/profile')  //sending the get request response as a json  with requset object.
 getProfile(@Request() req:Request) {
 
 
@@ -26,7 +26,7 @@ getProfile(@Request() req:Request) {
             "phone": "+1 (555) 123-4567"
         }
     };
-
+    //return json object using rxjs opertor
     return  of({
         student
     }) ;
