@@ -4,7 +4,7 @@ import { UsersController } from './users/users.controller';
 
 @Module({
   imports: [],
-  controllers: [UsersController],
+  controllers: [UsersController], //define userController and so on
   providers: [],
 })
 export class AppModule {}
